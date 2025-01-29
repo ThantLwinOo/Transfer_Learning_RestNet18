@@ -18,15 +18,21 @@ It consists of labeled images of pneumonia and normal X-rays.
 ## Initial Training
 
 Model              : ResNet-18
+
 Data Augumentation : Randomly flip horizontaly, randomly rotate images
+
 Training           : All layers were trainable with pretrained weights
+
 Optimizer          : Adam with learning rate 0.001 for 50 epochs
+
 Issues             : poor accuracy, flutuation, and overfitting
 
 ## Improvements
 
 Data Augmentation: Applied more data augementattion method to increase the diversity of the training data.(color variation and randomly crop)
+
 L2 Regularization: Added to the loss function to penalize large weights.
+
 Learning Rate Adjustment: Implemented to fine-tune the training process. (learning rate was reduced by 10% every 10 epchs)
 
   
